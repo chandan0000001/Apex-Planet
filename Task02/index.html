@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Webpage Showcase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">MySite</div>
+                <div class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#todo">To-Do List</a>
+                </div>
+                <button class="mobile-menu-btn">☰</button>
+            </nav>
+            <div class="mobile-menu">
+                <a href="#home">Home</a>
+                <a href="#contact">Contact</a>
+                <a href="#todo">To-Do List</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="main-grid">
+            <!-- Welcome Content Area -->
+            <div>
+                <section id="home" class="card">
+                    <h1>Welcome to the Showcase</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta veritatis consectetur aliquid cupiditate, ipsam commodi facere qui aliquam asperiores exercitationem, voluptatem eos tempore ut adipisci recusandae enim ipsa fugit, excepturi porro nulla natus culpa vitae? Provident, nulla temporibus est accusantium perspiciatis exercitationem ad consequatur incidunt, optio fugit labore consequuntur voluptatum illum! Eum voluptatibus maiores nihil veniam ducimus eaque minus eveniet aut et, dolorum odit totam voluptate molestiae minima, voluptates obcaecati vero praesentium! Mollitia ea laborum blanditiis quam libero eaque obcaecati quas sit, molestias sunt dolores, in natus. Esse aliquid aspernatur quod obcaecati commodi nisi nulla ipsa sapiente atque necessitatibus sed labore quibusdam consectetur deserunt, ipsum pariatur minus. Quaerat nihil optio autem. Libero corporis tempore, maxime asperiores architecto perspiciatis, vitae deserunt magnam hic rem sunt dolore iusto est. Cumque veniam pariatur nostrum impedit sint iusto magni ea. Alias consequuntur nisi sit unde totam illo dicta reprehenderit libero praesentium, aut, accusantium qui, vel cupiditate dignissimos ipsum doloribus rem. Blanditiis autem labore officia aut enim sint, libero quasi sit veniam accusamus, laudantium est omnis similique quibusdam rem consectetur porro quaerat delectus velit recusandae eius quae! Corrupti officiis facere, labore eligendi repellat quo, eius, cum nesciunt ab maxime qui omnis in neque hic sequi.
+                    </p>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus corrupti sed magni minus neque tenetur. Quo molestias accusantium error, obcaecati eaque iusto nesciunt laborum eius! Sed incidunt maiores temporibus possimus animi deserunt porro, quod impedit, iure perspiciatis nostrum blanditiis aperiam earum quis vero veniam, libero est non enim voluptatibus soluta exercitationem neque veritatis laborum? Illum, est? Possimus labore, unde id in tempora impedit fugiat consectetur ratione expedita similique quas, sunt quibusdam nulla blanditiis reiciendis quisquam sequi ab harum fuga qui. Corporis cumque accusantium cum, ipsam inventore exercitationem fugiat repellat deleniti sit quibusdam quia doloremque quaerat molestias voluptates eius, ea voluptatum?
+                    </p>
+                </section>
+            </div>
+
+            <!-- Sidebar with Form and To-Do List -->
+            <div>
+                <!-- Contact Form -->
+                <section id="contact" class="card">
+                    <h2>Contact Us</h2>
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                            <p id="nameError" class="error-message">Name is required.</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                            <p id="emailError" class="error-message">Please enter a valid email address.</p>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <p id="formSuccess" class="success-message">Thank you for your message!</p>
+                    </form>
+                </section>
+
+                <!-- Dynamic To-Do List -->
+                <section id="todo" class="card">
+                    <h2>To-Do List</h2>
+                    <div class="task-input-container">
+                        <input type="text" id="taskInput" placeholder="Add a new task..." class="task-input">
+                        <button id="addTaskBtn" class="task-btn">Add</button>
+                    </div>
+                    <ul id="taskList" class="task-list">
+                        <!-- Placeholder tasks -->
+                        <li class="task-item">
+                            <span class="task-text">Finish project proposal</span>
+                            <button class="btn btn-danger remove-btn">Remove</button>
+                        </li>
+                        <li class="task-item">
+                            <span class="task-text">Buy groceries</span>
+                            <button class="btn btn-danger remove-btn">Remove</button>
+                        </li>
+                        <li class="task-item">
+                            <span class="task-text task-completed">Call the dentist</span>
+                            <button class="btn btn-danger remove-btn">Remove</button>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
