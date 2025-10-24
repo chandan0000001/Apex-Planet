@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian States & Capitals Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <h1><span class="flag-icon"></span> Indian States & Capitals Quiz</h1>
+            <p>Test your knowledge of India's states and their capitals with this interactive quiz!</p>
+        </header>
+
+        <!-- Grid Container for Cards -->
+        <div class="grid-container">
+
+            <!-- Card 1: About the Quiz -->
+            <div class="card">
+                <h2><i>📚</i> Wealcome to Chandan's Quiz-Center</h2>
+                <p>
+                    India is a diverse country with 28 states and 8 union territories, each with its own unique culture and capital city.
+                </p>
+                <p>
+                    This quiz will test your knowledge of Indian states and their capitals. You'll be presented with a state name and need to select the correct capital from the options provided.
+                </p>
+                <p>
+                    How many can you get right? Let's find out!
+                </p>
+            </div>
+
+            <!-- Card 2: Interactive Quiz -->
+            <div class="card">
+                <h2><i>🧠</i> States & Capitals Quiz</h2>
+                <div id="quiz-container">
+                    <!-- Quiz content will be injected here -->
+                </div>
+                <div id="quiz-score" class="text-center"></div>
+                <div id="quiz-controls">
+                     <button id="submit-quiz-btn" class="btn btn-blue">Submit Answer</button>
+                     <button id="next-question-btn" class="btn btn-gray hidden">Next Question</button>
+                </div>
+                <p id="quiz-result"></p>
+            </div>
+
+            <!-- Card 3: Dad Jokes -->
+            <div class="card">
+                <h2><i>😂</i> Dad Jokes Corner</h2>
+                <div id="joke-container">
+                    <p>Need a laugh? Click the button to fetch a random dad joke!</p>
+                </div>
+                <button id="fetch-joke-btn" class="btn btn-indigo">
+                    Get a Dad Joke
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
